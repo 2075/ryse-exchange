@@ -1,0 +1,17 @@
+{
+  "name": "ryse",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "repository": "git@github.com:2075/ryse-exchange.git",
+  "author": "2075 <marco@zero.io>",
+  "license": "MIT",
+  "workspaces": ["pkg/*"],
+  "scripts": {
+    "dev": "concurrently 'cd ./pkg/app && yarn dev'"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "micro-proxy": "^1.1.0"
+  }
+}
